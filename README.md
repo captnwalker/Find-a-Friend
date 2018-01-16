@@ -1,4 +1,4 @@
-# ExpressJS Project
+# Friend Finder
 
 >Blah blah blah
 
@@ -6,16 +6,17 @@
 
 1. Clone repo//Heruku
 2. Run `npm install`
-3. Build database from `schema.sql` and `seeds_<15 or 100>.sql`
-4. At command prompt run `node bamazonCustomer.js`
+3. Build database fro
+4. At command prompt
 
 ### Screenshot of this Project
 
-![Express](https://raw.github.com/captnwalker/Bamazon/master/screenshot/screenshot.gif "Express")
+![Express](https://raw.github.com/captnwalker/express-app/master/screenshot/screenshot.gif "Express")
 
 ### Technologies Utilized
 
 * mySQL
+* Ajax
 * NodeJS
 * JavaScript
 * Express NPM
@@ -26,4 +27,4 @@
 
 * Steve Walker
 
-![Shoptocat](https://octodex.github.com/images/shoptocat.png)
+![Socialite](https://octodex.github.com/images/socialite.jpg)

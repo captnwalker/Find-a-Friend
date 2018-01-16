@@ -1,9 +1,10 @@
 {
-  "name": "express-app",
+  "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "An ExpressJS proof-of-concept project.",
+  "description": "An ExpressJS proof-of-concept Dating App.",
   "main": "app.js",
   "dependencies": {
+    "express": "^4.16.2",
     "init": "^0.1.2"
   },
   "devDependencies": {},
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/captnwalker/express.git"
+    "url": "git+https://github.com/captnwalker/FriendFinder.git"
   },
   "keywords": [
     "express",
@@ -21,7 +22,7 @@
   "author": "Steve Walker",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/captnwalker/express/issues"
+    "url": "https://github.com/captnwalker/FriendFinder/issues"
   },
-  "homepage": "https://github.com/captnwalker/express#readme"
+  "homepage": "https://github.com/captnwalker/FriendFinder#readme"
 }
