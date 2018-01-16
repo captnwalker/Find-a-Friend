@@ -4,8 +4,11 @@
   "description": "An ExpressJS proof-of-concept Dating App.",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "init": "^0.1.2"
+    "init": "^0.1.2",
+    "node": "^9.4.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
