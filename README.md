@@ -17,9 +17,12 @@
 
 * mySQL
 * Ajax
+* JSON
 * NodeJS
 * JavaScript
 * Express NPM
+* HTML5
+* CSS
 
 ---
 
