@@ -1,17 +1,18 @@
 # Friend Finder :couple:
 
->"FriendFinder" is a compatibility-based application -- basically a dating app, but designed for finding compatible potential friends. This full-stack site will take in results from  users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user who is the best overall match.
+## Purpose of this project
+
+>"FriendFinder" is a compatibility-based application -- basically a dating app; but in this case I have given the project a "Walking Dead" theme and designed whimsical questions for finding a compatible friend in the TV world of a zombie apocolypse. This full-stack app will take in results from users' surveys, then compares their answers with those imagined from the cast of the hit AMC TV series, as well as with previous users. The app will then display a modal with the name and picture (of the cast member) who is the best overall match.
 
 ### Deployment
 
-1. Clone repo//Heruku
-2. Run `npm install`
-3. Build database fro
-4. At command prompt
+This app has been deployed to Heroku and can be played by clicking the link below:
+
+(https://gentle-reef-59487.herokuapp.com/ "FriendFinder")
 
 ### Screenshot of this Project
 
-![Express](https://raw.github.com/captnwalker/express-app/master/screenshot/screenshot.gif "Express")
+![FriendFinder](https://raw.github.com/captnwalker/express-app/master/screenshot/screenshot.gif "FriendFinder")
 
 ### Technologies Utilized
 
@@ -21,6 +22,7 @@
 * NodeJS
 * JavaScript
 * Express NPM
+* Body-Parser NPM
 * HTML5
 * CSS
 
