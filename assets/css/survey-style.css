@@ -1,0 +1,17 @@
+body {
+    
+    background: url(../img/wallpaper2.jpg);
+    background-repeat: no-repeat;
+    color: rgb(236, 5, 5);
+    text-shadow: 1px 1px .3px rgb(240, 6, 6);
+    font-weight: bolder;
+    background-color: rgb(31,25,4);
+}
+
+form {
+    position: absolute;
+}
+
+h4 {
+    color: rgb(98,42,24);
+}
