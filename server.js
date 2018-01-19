@@ -5,23 +5,22 @@ var bodyParser = require('body-parser')
 
 var path = require('path');
 
-var PORT = process.env.PORT || 8080;
-
 // setting up Express Server
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
  
-app.get('/', function (req, res) {
+//app.get('/', function (req, res) {
 //   res.send('Hello World!!!!!')
 
-app.use(express.static(path.join(__dirname, './app/public')));
-})
+var PORT = process.env.PORT || 8080;
 
 // bodyParser to sort JSON
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
+
+app.use(express.static(path.join(__dirname, './app/public')));
 
 // requires for local .js files
 require('./app/routing/apiRoutes.js')(app); 

@@ -18,7 +18,6 @@ This app has been deployed to Heroku and can be played by clicking the link belo
 
 ### Technologies Utilized
 
-* mySQL
 * Ajax
 * JSON
 * NodeJS
