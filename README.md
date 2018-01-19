@@ -10,9 +10,11 @@ This app has been deployed to Heroku and can be played by clicking the link belo
 
 (https://gentle-reef-59487.herokuapp.com/ "FriendFinder")
 
-### Screenshot of this Project
+### Screenshots of this Project
 
-![FriendFinder](https://raw.github.com/captnwalker/express-app/master/screenshot/screenshot.gif "FriendFinder")
+![FriendFinder](https://raw.github.com/captnwalker/FriendFinder/master/screenshot/screenshot1.png "FriendFinder Landing Page")
+
+![FriendFinder](https://raw.github.com/captnwalker/FriendFinder/master/screenshot/screenshot2.png "FriendFinder Survey Page")
 
 ### Technologies Utilized
 
