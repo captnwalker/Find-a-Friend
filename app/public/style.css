@@ -1,0 +1,53 @@
+h1 {
+    font-size: 5.9em !important;
+    font-family: 'Frijole', cursive;
+}
+
+
+h3 {
+    font-family: 'Walter Turncoat', cursive !important;
+    text-shadow: 1px 1px .5px rgb(197,165,118)!important;
+}
+
+body {
+    background: url(../img/wallpaper1.jpg);
+    background-repeat: no-repeat;
+    color: rgb(236, 5, 5)!important;
+    text-shadow: 1px 1px .3px rgb(132,85,39)!important;
+    font-weight: bolder;
+    background-color: rgb(31,25,4);
+
+}
+
+.jumbotron{
+    margin-top:2em;
+    background: rgba(0,0,0, .0)!important;
+}
+
+/* Remove HR from Jumbotron */
+hr {  border:0; }
+
+.btn {
+    background:linear-gradient(transparent,transparent,transparent)!important;
+    font-family: fantasy;
+  
+}
+
+.btn:hover {
+    color: rgb(138, 4, 4) !important;
+}
+
+/* .btn 
+ {
+    background-color: rgba (0,0,0,.0) !important;
+    background: transparent;
+    color: rgb(214, 86, 12) !important;
+
+}
+
+.btn-lg 
+{
+    background-color: rgba (0,0,0,.0) !important;
+    background: transparent;
+    color: rgb(214, 86, 12) !important;
+} */

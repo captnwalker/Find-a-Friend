@@ -1,0 +1,33 @@
+body {
+    
+    background: url(../img/wallpaper2.jpg);
+    background-repeat: no-repeat;
+    color: rgb(236, 5, 5);
+    text-shadow: 1px 1px .3px rgb(240, 6, 6);
+    font-weight: bolder;
+    background-color: rgb(31,25,4);
+    }
+
+h1 {    
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 1px 1px .3px rgb(19, 2, 2);
+    }
+
+h3 {
+    font-family: 'Walter Turncoat', cursive !important;
+    text-shadow: 1px 1px .3px rgb(19, 2, 2);
+    }
+
+form {
+    position: absolute;
+    }
+
+h4 {
+    color: rgb(26, 9, 4);
+    }
+
+    /* Color HR in Jumbotron */
+hr {  
+    border-color: rgb(240, 6, 6);
+    }
+
