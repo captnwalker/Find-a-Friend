@@ -8,6 +8,11 @@ var path = require('path');
 // setting up Express Server
 var express = require('express');
 var app = express();
+
+
+app.get('/', function(req, res) {
+    res.sendFile( path.resolve('src/app/home.html') );
+});
  
 // app.get('/', function (req, res) {
 // });
@@ -22,7 +27,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 //app.use(express.static(path.join(__dirname, './app/public')));
-res.sendFile('home.html', { root: path.join(__dirname, './app/public') });
+//res.sendFile('home.html', { root: path.join(__dirname, './app/public') });
 
 // requires for local .js files
 require('./app/routing/apiRoutes.js')(app); 
