@@ -11,7 +11,7 @@ var app = express();
 
 
 app.get('/', function(req, res) {
-    res.sendFile( path.resolve('src/app/home.html') );
+    res.sendFile( path.resolve('app/public/home.html') );
 });
  
 // app.get('/', function (req, res) {
