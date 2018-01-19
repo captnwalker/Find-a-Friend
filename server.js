@@ -10,9 +10,9 @@ var express = require('express');
 var app = express();
 
 
-// app.get('/', function(req, res) {
-//     res.sendFile( path.resolve('app/public/home.html') );
-// });
+app.get('/', function(req, res) {
+    res.sendFile( path.resolve(__dirname,//'app/public/home.html') );
+});
  
 
 app.use(express.static(path.join(__dirname, 'app/public')));
