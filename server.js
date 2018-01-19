@@ -10,10 +10,12 @@ var express = require('express');
 var app = express();
 
 
-app.get('/', function(req, res) {
-    res.sendFile( path.resolve('app/public/home.html') );
-});
+// app.get('/', function(req, res) {
+//     res.sendFile( path.resolve('app/public/home.html') );
+// });
  
+
+app.use(express.static(path.join(__dirname, 'app/public')));
 // app.get('/', function (req, res) {
 // });
 //   res.send('Hello World!!!!!')
@@ -25,6 +27,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
+
+
 
 //app.use(express.static(path.join(__dirname, './app/public')));
 //res.sendFile('home.html', { root: path.join(__dirname, './app/public') });
