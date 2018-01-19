@@ -1,31 +1,34 @@
-// Dependencies
-// =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
+// dependencies
+var http = require("http");
 
-//bbb
-// Sets up the Express App
-// =============================================================
+var bodyParser = require('body-parser')
+
+var path = require('path');
+
+// setting up Express Server
+var express = require('express');
 var app = express();
-//var PORT = 7000;
-var PORT = process.env.PORT || 3100;
+ 
+// app.get('/', function (req, res) {
+// });
+//   res.send('Hello World!!!!!')
 
+var PORT = process.env.PORT || 8080;
 
-// Sets up the Express app to handle data parsing
-app.use(bodyParser.urlencoded({ extended: true }));
+// bodyParser to sort JSON
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.text());
+app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
+//app.use(express.static(path.join(__dirname, './app/public')));
+res.sendFile('home.html', { root: path.join(__dirname, './app/public') });
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
-  });
-  
+// requires for local .js files
+require('./app/routing/apiRoutes.js')(app); 
+require('./app/routing/htmlRoutes.js')(app);
 
-
-
-// =============================================================
+// start the server
 app.listen(PORT, function() {
-    console.log("FF App listening on PORT " + PORT);
-  });
-  
+	console.log("Zombie Friend Finder App is listening on PORT: " + PORT);
+});
