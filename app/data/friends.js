@@ -1,130 +1,130 @@
 var friends = [
     {
-        "name":"Carl",
-        "photo":"\assets\img\Carl.jpg",
-        "scores":[
-           5,
-           1,
-           4,
-           4,
-           5,
-           1,
-           2,
-           5,
-           4,
-           1
-            ]
-        },
+    "name":"Carl",
+    "photo":"\assets\img\Carl.jpg",
+    "scores":[
+        5,
+        5,
+        4,
+        2,
+        3,
+        4,
+        5,
+        5,
+        1,
+        5
+        ]
+    },
     {
     "name":"Rick",
     "photo":"\assets\img\Rick.jpg",
     "scores":[
        5,
-       1,
        4,
-       4,
-       5,
-       1,
        2,
+       4,
+       4,
        5,
        4,
-       1
+       5,
+       2,
+       5
         ]
   },
   {
     "name":"Daryll",
     "photo":"\assets\img\Daryll.jpg",
     "scores":[
-       9,
-       1,
-       4,
-       4,
        5,
-       1,
+       5,
+       3,
+       3,
+       3,
+       3,
+       5,
+       5,
        2,
-       5,
-       4,
-       1
+       4
         ]
   },
   {
     "name":"Eugene",
     "photo":"\assets\img\Eugene.jpg",
     "scores":[
-       5,
        1,
-       4,
-       3,
+       1,
        2,
-       6,
-       9,
-       8,
-       9,
-       9
+       4,
+       1,
+       1,
+       1,
+       2,
+       5,
+       1
         ]
   },
   {
     "name":"King Ezekiel",
     "photo":"\assets\img\king_ezekiel.jpg",
     "scores":[
-       5,
+       4,
+       2,
+       3,
+       1,
        1,
        4,
-       3,
-       2,
-       6,
-       9,
-       8,
-       9,
-       9
+       4,
+       4,
+       1,
+       5
         ]
   },
   {
     "name":"Maggie",
     "photo":"\assets\img\Maggie.jpg",
     "scores":[
-       5,
-       1,
+       2,
+       2,
        4,
        3,
-       2,
-       6,
-       9,
-       8,
-       9,
-       9
+       1,
+       4,
+       5,
+       4,
+       1,
+       5
         ]
   },
   {
     "name":"Michonne",
     "photo":"\assets\img\michonne.jpg",
     "scores":[
-       5,
        1,
-       4,
-       3,
        2,
-       6,
-       9,
-       8,
-       9,
-       9
+       5,
+       4,
+       5,
+       3,
+       5,
+       2,
+       2,
+       4
         ]
   },
   {
     "name":"Morgan",
     "photo":"\assets\img\morgan.jpg",
     "scores":[
-       5,
-       1,
+       2,
+       4,
+       4,
        4,
        3,
+       4,
+       5,
        2,
-       6,
-       9,
-       8,
-       9,
-       9
+       1,
+       2
         ]
   },
   {
@@ -132,15 +132,15 @@ var friends = [
     "photo":"\assets\img\Negan.jpg",
     "scores":[
        5,
-       1,
        4,
-       3,
+       5,
+       5,
+       4,
+       4,
        2,
-       6,
-       9,
-       8,
-       9,
-       9
+       2,
+       5,
+       4
         ]
   },
   {
@@ -148,15 +148,15 @@ var friends = [
     "photo":"\assets\img\zombie.jpg",
     "scores":[
        5,
-       1,
-       4,
+       5,
+       5,
+       5,
        3,
-       2,
-       6,
-       9,
-       8,
-       9,
-       9
+       3,
+       1,
+       5,
+       4,
+       1
         ]
   }
   ]

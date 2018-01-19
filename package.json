@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "chosen-npm": "^1.4.2",
     "express": "^4.16.2",
     "init": "^0.1.2",
     "node": "^9.4.0",
