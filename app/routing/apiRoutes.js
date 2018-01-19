@@ -15,10 +15,10 @@ module.exports = function (app) {
 			image: "",
 			matchDifference: 1000
 		};
-		var usrData = req.body;
-		var usrName = usrData.name;
-		var usrImage = usrData.image;
-		var usrScores = usrData.scores;
+		var userData = req.body;
+		var usrName = userData.name;
+		var usrImage = userData.image;
+		var usrScores = userData.scores;
 
 		var totalDifference = 0;
 
@@ -42,7 +42,7 @@ module.exports = function (app) {
 			}
 		}
 
-		friends.push(usrData);
+		friends.push(userData);
 
 		res.json(greatMatch);
 	});
