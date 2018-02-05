@@ -8,7 +8,7 @@
 
 This app has been deployed to Heroku and can be played by clicking the link below:
 
-(https://gentle-reef-59487.herokuapp.com/ "FriendFinder")
+(https://frozen-gorge-75198.herokuapp.com/ "FriendFinder")
 
 ### Screenshots of this Project
 
