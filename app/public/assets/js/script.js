@@ -1,34 +1,26 @@
-
-// Global Variable Declaration (scoping fix)
 var allFieldsCompleted;
 
 $(document).ready(function () {
 
-    // Event Listener for Submission
+    // Event Listener
     $('#submitButton').on('click', function () {
 
-        // Check if all the user fields are completed
         checkIfComplete(function () {
 
-            // Proceed with AJAX call if all questions are answered
             if (allFieldsCompleted) {
                 collectInputs();
             }
             else {
                 alert('Please complete all fields before submitting!');
             }
+        }); 
+    }); 
+}); 
 
-        }); // end checkIfComplete() callback
-
-    }); // end submit listener
-
-}); // document ready
-
-
-// Function to valid user input
+// Function to validate player input
 function checkIfComplete(callback) {
 
-    // Check through all the questions (i.e. iterate through all of class "chosen-select")
+    // Loop through all the questions 
     var questionsCompleted;
     $('.chosen-select').each(function () {
         if ($(this).val() == "") {
@@ -36,39 +28,35 @@ function checkIfComplete(callback) {
         }
     })
 
-        // This counters the async behavior of $.each()
         .promise().done(function () {
 
-            // Check if any questions are incomplete
+            // Questions incomplete?
             if (questionsCompleted == false) {
                 allFieldsCompleted = false;
             }
 
-            // Determine if Name is entered
+            // Name is entered?
             else if ($('#formName').val().trim() == "") {
                 allFieldsCompleted = false;
             }
 
-            // Determine if Link is entered
+            // Img Link is entered?
             else if ($('#formImage').val().trim() == "") {
                 allFieldsCompleted = false;
             }
 
-            // Otherwise, the all fields are completed
             else {
                 allFieldsCompleted = true;
             }
 
-            // Fire Off Callback (to counter async behavior of $.each)
             callback();
 
         });
 }
 
-
 function collectInputs() {
 
-    // Make new friend object
+    // Make new player an object
     var newFriend = {
         name: $('#formName').val().trim(),
         photo: $('#formImage').val().trim(),
@@ -78,26 +66,25 @@ function collectInputs() {
     // Loop through Questions to get scores
     var scoresArray = [];
     $('.chosen-select').each(function () {
-        scoresArray.push(parseInt($(this).val())); // Parse Input Value as integer
+        scoresArray.push(parseInt($(this).val())); /
     })
-        // This counters the async behavior of $.each()
+
         .promise().done(function () {
 
-            // Push the array of scores to the new friend object
+            // Push the array of scores 
             newFriend.scores = scoresArray;
 
-            // POST the newFriend to the friends.js file and get back the best match
             var currentURL = window.location.origin;
             $.post(currentURL + "/api/friends", newFriend, function (data) {
 
-                // Add Best Match attributes to Modal
+                // Best Match to Modal
                 $('#matchName').text(data.name);
                 $('#matchImg').attr('src', data.photo);
 
-                // Show the modal with the best match 
+                // Show best match in the modal
                 $("#resultsModal").modal('toggle');
 
-            }); // end AJAX POST
+            });
 
         });
 

@@ -12,11 +12,6 @@ var app = express();
 require('./app/routing/apiRoutes.js')(app); 
 require('./app/routing/htmlRoutes.js')(app);
 
-// app.get('/', function(req, res) {
-//     res.sendFile( path.resolve('app/public/home.html') );
-// });
- 
-
 var PORT = process.env.PORT || 8080;
 
 // bodyParser to sort JSON
