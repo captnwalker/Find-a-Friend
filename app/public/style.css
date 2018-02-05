@@ -10,7 +10,7 @@ h3 {
 }
 
 body {
-    background: url(../img/wallpaper1.jpg);
+    background: url(assets/img/wallpaper1.jpg);
     background-repeat: no-repeat;
     color: rgb(236, 5, 5)!important;
     text-shadow: 1px 1px .3px rgb(132,85,39)!important;
